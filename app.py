@@ -36,7 +36,7 @@ def convert():
       labelFileName.pack(pady=0, padx=0)
       print(f"Converting {sourceFolder+'/'+filename.lower()} ...")
       print(f"{destinationFolder+'/'+filename[0:-5]}.jpg")
-      subprocess.run(["ImageMagick-7.1.1-20-portable/magick.exe", sourceFolder+'/'+filename, f"{destinationFolder+'/'+filename[0:-5]}.jpg"])
+      subprocess.run(["ImageMagick/magick.exe", sourceFolder+'/'+filename, f"{destinationFolder+'/'+filename[0:-5]}.jpg"])
   print("Conversion done!")
 
 # ------------------------------------------------------------------
